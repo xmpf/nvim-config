@@ -28,5 +28,3 @@ vim.bo.swapfile = false
 vim.wo.number = true
 vim.wo.wrap = false
 vim.wo.colorcolumn = '80'
-
-vim.g.mapleader = ";"
