@@ -1,6 +1,20 @@
+local utils = require('utils')
+local install_path = vim.fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
+
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function(use)
+if not utils.path_exists(install_path) then
+    vim.fn.system({
+        'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim',
+        install_path
+    })
+
+    fresh_install = true
+end
+
+local packer = require('packer')
+
+packer.startup(function(use)
 
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
