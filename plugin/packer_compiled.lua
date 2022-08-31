@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/ayu-vim",
     url = "https://github.com/ayu-theme/ayu-vim"
   },
+  ["better-comments.nvim"] = {
+    loaded = true,
+    path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/better-comments.nvim",
+    url = "https://github.com/Djancyp/better-comments.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/cmp-buffer",

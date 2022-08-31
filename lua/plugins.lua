@@ -31,14 +31,17 @@ packer.startup(function(use)
   use 'plasticboy/vim-markdown'
   use 'jceb/vim-orgmode'
 
-  -- rust
+  -- programming
+ use "Djancyp/better-comments.nvim"
+
+  --- rust
   use 'simrat39/rust-tools.nvim'
   use 'cespare/vim-toml'
 
-  -- golang
+  --- golang
   use 'ray-x/guihua.lua'
 
-  -- LSP autocomplete.
+  --- LSP autocomplete.
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
