@@ -1,6 +1,6 @@
 -- keybindings
-require('keybindings')
 require('keymaps')
+require('keybindings')
 
 -- configuration
 require('clipboard')
