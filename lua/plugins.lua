@@ -19,6 +19,9 @@ packer.startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  -- dashboard
+  use 'glepnir/dashboard-nvim'
+
   -- LSP.
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
