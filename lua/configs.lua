@@ -19,18 +19,18 @@ vim.opt.autoindent = true
 vim.opt.ignorecase = true
 vim.opt.splitright = true
 vim.opt.hlsearch = true
-
+   
 -- vim commands
 vim.cmd('syntax on')
 vim.cmd('filetype plugin on')
 vim.cmd('filetype indent on')
 vim.cmd('colorscheme behelit')
-
+   
 -- buffer local
 vim.bo.autoindent = true
 vim.bo.smartindent = true
 vim.bo.swapfile = false
-
+   
 -- window local
 vim.wo.number = true
 vim.wo.wrap = false

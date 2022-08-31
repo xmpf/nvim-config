@@ -73,4 +73,6 @@ packer.startup(function(use)
   -- Embeded floating terminal.
   use 'numToStr/FTerm.nvim'
 
+  -- multiple cursors
+  use 'mg979/vim-visual-multi'
 end)

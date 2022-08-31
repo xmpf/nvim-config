@@ -209,6 +209,11 @@ _G.packer_plugins = {
     path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/vim-toml",
     url = "https://github.com/cespare/vim-toml"
   },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/vim-vsnip",

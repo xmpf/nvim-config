@@ -18,5 +18,5 @@ nvim_tree.setup {
 }
 
 nest.applyKeymaps {
-  { '<leader>n', '<cmd>NvimTreeToggle<cr>' },
+  { 'nn', '<cmd>NvimTreeToggle<cr>' },
 }

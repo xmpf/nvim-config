@@ -5,7 +5,7 @@ nest.applyKeymaps {
   { 'Q', '<cmd>q!<cr>' },
 
   -- Disable recording
-  { 'qq', '<Nop>' },
+  { 'qq', '<cmd>wq!<cr>' },
 
   -- Reset search highlight
   { '<leader>h', '<cmd>nohl<cr>' },
@@ -30,4 +30,7 @@ nest.applyKeymaps {
 
   -- reindent whole file
   { '<leader>i',  'mzgg=G`z' },
+
+  -- nvim-tree := ./plugins/nvim-tree.lua
+
 }
