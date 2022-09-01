@@ -4,6 +4,9 @@
 
 ...
 
++ New plugins are defined in `lua/plugins.lua`.
++ Configuration files regarding plugins should be under `lua/plugins/<plugin>.lua`
+
 ## Features
 
 + Plugin management via [Packer.nvim](https://github.com/wbthomason/packer.nvim).
@@ -14,14 +17,18 @@
 ## Keybindings
 
 File: `lua/keymaps.lua`
-```lua
-vim.g.mapleader = " "
-```
+
++ `vim.g.mapleader = " "`
 
 File: `lua/keybindings.lua`
-```lua
 
-```
++ `{ 'QQ', '<cmd>q!<cr>' }`
++ `{ 'qq', '<cmd>wq!<cr>' }`
++ `{ '<leader>h', '<cmd>nohl<cr>' }`
+
+File: `lua/plugins/nvim-tree.lua`
+
++ `{ 'nn', '<cmd>NvimTreeToggle<cr>' }`
 
 ## References
 

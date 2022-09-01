@@ -29,7 +29,7 @@ packer.startup(function(use)
 
   -- markdown
   use 'plasticboy/vim-markdown'
-  use 'jceb/vim-orgmode'
+  -- use 'jceb/vim-orgmode'
 
   -- programming
  use "Djancyp/better-comments.nvim"
@@ -48,6 +48,7 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+  use 'doums/suit.nvim'
 
   -- Treesitter.
   use 'nvim-treesitter/nvim-treesitter'

@@ -20,6 +20,6 @@ keymap('n', '<leader>k', ':Telescope keymaps<CR>', {})
 keymap('n', '<c-v>', 'P$i<Right>', {})
 
 -- insert mode
-keymap('i', '<c-s>', '<ESC>:w<CR>', {})
+keymap('i', '<c-s>', '<ESC>:w<CR>i<Right>', {})
 keymap('i', '<c-v>', '<ESC>P$i<Right>', {})
 

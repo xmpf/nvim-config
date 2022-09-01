@@ -1,10 +1,8 @@
 local nest = require('nest')
 
 nest.applyKeymaps {
-  -- Disable ex mode
-  { 'Q', '<cmd>q!<cr>' },
-
-  -- Disable recording
+  -- quick quit
+  { 'QQ', '<cmd>qa!<cr>' },
   { 'qq', '<cmd>wq!<cr>' },
 
   -- Reset search highlight

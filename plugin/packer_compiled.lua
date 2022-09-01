@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
     url = "https://github.com/simrat39/rust-tools.nvim"
   },
+  ["suit.nvim"] = {
+    loaded = true,
+    path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/suit.nvim",
+    url = "https://github.com/doums/suit.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -198,11 +203,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/vim-markdown",
     url = "https://github.com/plasticboy/vim-markdown"
-  },
-  ["vim-orgmode"] = {
-    loaded = true,
-    path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/vim-orgmode",
-    url = "https://github.com/jceb/vim-orgmode"
   },
   ["vim-ripgrep"] = {
     loaded = true,
