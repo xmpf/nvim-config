@@ -2,11 +2,21 @@ local nvim_tree = require('nvim-tree')
 local nest = require('nest')
 
 nvim_tree.setup {
-    filters = {
-        dotfiles = true,
-    }
+  sort_by = "case_insensitive",
+  view = {
+    adaptive_size = false,
+    side = "left",
+    mappings = {
+      list = {
+        { key = "u", action = "dir_up" },
+      },
+    },
+  },
+  filters = {
+    dotfiles = true,
+  }
 }
 
 nest.applyKeymaps {
-    { '<leader>n', '<cmd>NvimTreeToggle<cr>' },
+  { 'nn', '<cmd>NvimTreeToggle<cr>' },
 }

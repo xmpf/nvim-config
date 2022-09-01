@@ -1,9 +1,26 @@
+local utils = require('utils')
+local install_path = vim.fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
+
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function(use)
+if not utils.path_exists(install_path) then
+    vim.fn.system({
+        'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim',
+        install_path
+    })
+
+    fresh_install = true
+end
+
+local packer = require('packer')
+
+packer.startup(function(use)
 
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
+
+  -- dashboard
+  use 'glepnir/dashboard-nvim'
 
   -- LSP.
   use 'neovim/nvim-lspconfig'
@@ -12,22 +29,26 @@ return require('packer').startup(function(use)
 
   -- markdown
   use 'plasticboy/vim-markdown'
-  use 'jceb/vim-orgmode'
+  -- use 'jceb/vim-orgmode'
 
-  -- rust
+  -- programming
+ use "Djancyp/better-comments.nvim"
+
+  --- rust
   use 'simrat39/rust-tools.nvim'
   use 'cespare/vim-toml'
 
-  -- golang
+  --- golang
   use 'ray-x/guihua.lua'
 
-  -- LSP autocomplete.
+  --- LSP autocomplete.
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+  use 'doums/suit.nvim'
 
   -- Treesitter.
   use 'nvim-treesitter/nvim-treesitter'
@@ -56,4 +77,6 @@ return require('packer').startup(function(use)
   -- Embeded floating terminal.
   use 'numToStr/FTerm.nvim'
 
+  -- multiple cursors
+  use 'mg979/vim-visual-multi'
 end)
