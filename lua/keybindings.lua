@@ -2,15 +2,15 @@ local nest = require('nest')
 
 nest.applyKeymaps {
   -- quick quit
-  { 'QQ', '<cmd>qa!<cr>' },
+  { 'QQ', '<cmd>q!<cr>' },
   { 'qq', '<cmd>wq!<cr>' },
 
   -- Reset search highlight
   { '<leader>h', '<cmd>nohl<cr>' },
 
   -- move between windows
-  { '<m-w>', '<c-w>j' }, -- up
-  { '<m-s>', '<c-w>k' }, -- down
+  { '<m-w>', '<c-w>k' }, -- up
+  { '<m-s>', '<c-w>j' }, -- down
   { '<m-a>', '<c-w>h' }, -- left
   { '<m-d>', '<c-w>l' }, -- right
 

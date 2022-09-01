@@ -40,6 +40,7 @@ packer.startup(function(use)
 
   --- golang
   use 'ray-x/guihua.lua'
+  use 'fatih/vim-go'
 
   --- LSP autocomplete.
   use 'hrsh7th/nvim-cmp'
