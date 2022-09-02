@@ -9,7 +9,6 @@ require('configs')
 -- plugins
 require('plugins')
 require('lsp')
-require('plugins.nvim-tree')
 
 -- programming languages
 require('golang')

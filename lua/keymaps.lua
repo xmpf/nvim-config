@@ -15,11 +15,17 @@ keymap('n', '<c-f>',     ':Telescope find_files<CR>', {})
 keymap('n', '<leader>g', ':Telescope live_grep<CR>', {}) 
 keymap('n', '<leader>b', ':Telescope buffers<CR>', {}) 
 keymap('n', '<leader>k', ':Telescope keymaps<CR>', {}) 
+keymap('n', '<leader>d', ':Telescope diagnostics bufnr=0<CR>', {})
 
 --- copy/paste
 keymap('n', '<c-v>', 'P$i<Right>', {})
 
+--- programming
+keymap('n', '<c-k>', '<cmd>lua require("lsp_signature").signature()<CR>', {})
+keymap('n', '[g', '<cmd>lua vim.diagnostic.goto_prev()<cr>', {})
+keymap('n', ']g', '<cmd>lua vim.diagnostic.goto_next()<cr>', {}) 
+
 -- insert mode
-keymap('i', '<c-s>', '<ESC>:w<CR>i<Right>', {})
-keymap('i', '<c-v>', '<ESC>P$i<Right>', {})
+keymap('i', '<c-s>', '<ESC>:w<CR>', {})
+keymap('i', '<c-v>', '<SPACE><ESC>P$i', {})
 

@@ -81,3 +81,6 @@ packer.startup(function(use)
   -- multiple cursors
   use 'mg979/vim-visual-multi'
 end)
+
+require('plugins.nvim-tree')
+require('plugins.dashboard')

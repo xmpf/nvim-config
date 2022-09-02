@@ -7,6 +7,10 @@
 + New plugins are defined in `lua/plugins.lua`.
 + Configuration files regarding plugins should be under `lua/plugins/<plugin>.lua`
 
+#### vim-go
+
++ `:GoInstallBinaries`
+
 ## Features
 
 + Plugin management via [Packer.nvim](https://github.com/wbthomason/packer.nvim).
