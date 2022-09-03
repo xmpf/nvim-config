@@ -29,7 +29,7 @@ packer.startup(function(use)
 
   -- markdown
   use 'plasticboy/vim-markdown'
-  -- use 'jceb/vim-orgmode'
+  use 'nathom/filetype.nvim'
 
   -- programming
  use "Djancyp/better-comments.nvim"

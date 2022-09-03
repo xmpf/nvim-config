@@ -19,7 +19,8 @@ vim.opt.autoindent = true
 vim.opt.ignorecase = true
 vim.opt.splitright = true
 vim.opt.hlsearch = true
-   
+vim.opt.conceallevel = 3
+
 -- vim commands
 vim.cmd('syntax on')
 vim.cmd('filetype plugin on')
@@ -30,7 +31,8 @@ vim.cmd('colorscheme behelit')
 vim.bo.autoindent = true
 vim.bo.smartindent = true
 vim.bo.swapfile = false
-   
+vim.bo.filetype = 'on'
+
 -- window local
 vim.wo.number = true
 vim.wo.wrap = false
