@@ -84,3 +84,4 @@ end)
 
 require('plugins.nvim-tree')
 require('plugins.dashboard')
+require('plugins.vim-markdown')
