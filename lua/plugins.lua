@@ -82,6 +82,9 @@ packer.startup(function(use)
   use 'mg979/vim-visual-multi'
 end)
 
+-- plugin configuration files
+
 require('plugins.nvim-tree')
 require('plugins.dashboard')
 require('plugins.vim-markdown')
+require('plugins.nvim-cmp')
