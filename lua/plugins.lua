@@ -40,6 +40,7 @@ packer.startup(function(use)
 
   --- golang
   use 'ray-x/guihua.lua'
+  use 'fatih/vim-go'
 
   --- LSP autocomplete.
   use 'hrsh7th/nvim-cmp'
@@ -80,3 +81,10 @@ packer.startup(function(use)
   -- multiple cursors
   use 'mg979/vim-visual-multi'
 end)
+
+-- plugin configuration files
+
+require('plugins.nvim-tree')
+require('plugins.dashboard')
+require('plugins.vim-markdown')
+require('plugins.nvim-cmp')

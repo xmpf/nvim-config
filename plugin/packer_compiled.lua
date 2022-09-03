@@ -199,6 +199,11 @@ _G.packer_plugins = {
     path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-lua/telescope.nvim"
   },
+  ["vim-go"] = {
+    loaded = true,
+    path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/vim-go",
+    url = "https://github.com/fatih/vim-go"
+  },
   ["vim-markdown"] = {
     loaded = true,
     path = "/home/ishtar/.local/share/nvim/site/pack/packer/start/vim-markdown",
