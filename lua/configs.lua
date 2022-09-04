@@ -1,5 +1,5 @@
 -- meta variables
-local spaces = spaces 
+local spaces = 2
 
 -- global opts
 vim.opt.completeopt = { "menuone", "noinsert", "noselect" }
@@ -44,7 +44,6 @@ vim.opt.hlsearch = true
 -- vim commands
 vim.cmd('syntax on')
 vim.cmd('filetype plugin indent on')
-vim.cmd('filetype indent on')
 vim.cmd('colorscheme behelit')
    
 -- buffer local
