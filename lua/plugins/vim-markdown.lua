@@ -1,4 +1,3 @@
--- keybindings
 --[[ 
       + `zr`: reduces fold level throughout the buffer
       + `zR`: opens all folds
@@ -14,6 +13,10 @@
       + `:InsertToc`: insert ToC 
 
 --]]
+
+-- keybindings
+vim.keymap.set('n', '<C-t>', ':Toc<CR>', {}) 
+vim.keymap.set('n', '<C-t>i', ':InsertToc<CR>', {}) 
 
 -- disable folding 
 vim.g.vim_markdown_folding_disabled = 1

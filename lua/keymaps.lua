@@ -10,15 +10,15 @@ keymap('n', '<c-s>', ':w<CR>', {})
 keymap('n', 'ww',    ':w<CR>', {})
 keymap('n', '<leader>t', ':hsplit<CR>:terminal<CR>', {})
 
---- markdown
-keymap('n', '<c-t>', ':InsertToc<CR>', {})
-
 --- telescope
 keymap('n', '<c-f>',     ':Telescope find_files<CR>', {})
 keymap('n', '<leader>g', ':Telescope live_grep<CR>', {}) 
 keymap('n', '<leader>b', ':Telescope buffers<CR>', {}) 
 keymap('n', '<leader>k', ':Telescope keymaps<CR>', {}) 
 keymap('n', '<leader>d', ':Telescope diagnostics bufnr=0<CR>', {})
+
+--- markdown
+--- see: ./plugins/vim-markdown.lua
 
 --- copy/paste
 keymap('n', '<c-v>', 'P$i<Right>', {})
