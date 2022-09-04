@@ -1,28 +1,53 @@
 require('nvim-treesitter.install').compilers = { "gcc" }
 require('nvim-treesitter.configs').setup {
   ensure_installed = {
-    "make",
-    "markdown",
+    -- b
     "bash",
+    -- c
     "c",
-    "lua",
-    "rust",
-    "nix",
+    -- d
+    "dockerfile",
+    -- g
     "go",
     "gomod",
-    "json",
-    "yaml",
+    -- h
     "html",
-    "proto",
+    -- j
+    "json",
     "javascript",
+    -- l
+    "lua",
+    -- m
+    "make",
+    "markdown",
+    -- n
+    "nix",
+    -- p
+    "proto",
+    -- r
+    "rust",
+    -- t
     "typescript",
     "tsx",
-    "dockerfile",
+    -- y
+    "yaml",
   },
   highlight = {
     enable = true,
+    use_languagetree = true, 
   },
   indent = {
     enable = true,
   },
+  autotag = {
+    enable = true,
+  },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  },
+  refactor = {
+    highlight_definitions = { enable = true },
+    highlight_current_scope = { enable = false },
+  }, 
 }

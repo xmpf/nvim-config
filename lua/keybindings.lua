@@ -27,7 +27,7 @@ nest.applyKeymaps {
   },
 
   -- reindent whole file
-  { '<leader>i',  'mzgg=G`z' },
+  { '<c-i>',  'mzgg=G`z' },
 
   -- nvim-tree := ./plugins/nvim-tree.lua
 

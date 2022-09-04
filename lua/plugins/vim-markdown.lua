@@ -22,7 +22,9 @@ vim.g.vim_markdown_folding_disabled = 1
 vim.g.vim_markdown_toc_autofit = 1
 
 -- formatting
-vim.g.vim_markdown_conceal_code_blocks = 0 
+vim.g.markdown_conceal = 1
+vim.g.markdown_enable_conceal = 1
+vim.g.vim_markdown_conceal_code_blocks = 1 
 vim.g.vim_markdown_toml_frontmatter = 1
 vim.g.vim_markdown_json_frontmatter = 1
 vim.g.vim_markdown_strikethrough = 1
