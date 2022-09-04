@@ -40,3 +40,4 @@ File: `lua/plugins/nvim-tree.lua`
 + https://github.com/gerep/dot
 + https://github.com/rockerBOO/awesome-neovim
 + https://github.com/jdhao/nvim-config
++ https://github.com/CosmicNvim/CosmicNvim 
