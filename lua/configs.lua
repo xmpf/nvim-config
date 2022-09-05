@@ -27,6 +27,7 @@ vim.opt.termguicolors = true
 vim.opt.conceallevel = 3
 vim.opt.splitright = true
 vim.opt.splitbelow = true
+vim.opt.showmatch = true
 
 ---[ indentation
 vim.opt.shiftwidth = spaces

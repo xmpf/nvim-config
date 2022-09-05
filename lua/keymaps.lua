@@ -10,7 +10,7 @@ keymap('n', '<C-s>', ':w<CR>', {})
 keymap('n', 'ww',    ':w<CR>', {})
 keymap('n', '<leader>t', ':hsplit<CR>:terminal<CR>', {})
 keymap('n', '<Tab>', '>>', {})
-keymap('n', '<S-Tab>', '<<', {})
+keymap('n', '<S-Tab>', '<<$', {})
 
 --- telescope
 keymap('n', '<C-f>',     ':Telescope find_files<CR>', {})
@@ -33,4 +33,5 @@ keymap('n', ']g', '<cmd>lua vim.diagnostic.goto_next()<cr>', {})
 -- insert mode
 keymap('i', '<C-s>', '<ESC>:w<CR>', {})
 keymap('i', '<C-v>', '<SPACE><ESC>P$i', {})
+keymap('i', '<S-Tab>', '<ESC><<$i<Right>', {})
 
