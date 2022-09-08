@@ -9,26 +9,25 @@ nest.applyKeymaps {
   { '<leader>h', '<cmd>nohl<cr>' },
 
   -- move between windows
-  { '<m-w>', '<c-w>k' }, -- up
-  { '<m-s>', '<c-w>j' }, -- down
-  { '<m-a>', '<c-w>h' }, -- left
-  { '<m-d>', '<c-w>l' }, -- right
+  { '<m-w>', '<ESC><C-w>k', mode = 'ni' }, -- up
+  { '<m-s>', '<ESC><C-w>j', mode = 'ni' }, -- down
+  { '<m-a>', '<ESC><C-w>h', mode = 'ni' }, -- left
+  { '<m-d>', '<ESC><C-w>l', mode = 'ni' }, -- right
 
   -- move between buffers
-  { '<m-l>',   '<cmd>bnext<cr>' },
-  { '<m-j>',   '<cmd>bprevious<cr>' },
+  { '<m-l>',   '<ESC><cmd>bnext<cr>', mode = 'ni' },
+  { '<m-j>',   '<ESC><cmd>bprevious<cr>', mode = 'ni' },
 
-  -- window splitting
+  -- leader keymaps
   {
     '<leader>', {
+      -- window splitting
       { '-',  '<cmd>split<cr>' },
       { '\\', '<cmd>vsplit<cr>' },
     }
   },
 
   -- reindent whole file
-  { '<c-i>',  'mzgg=G`z' },
-
-  -- nvim-tree := ./plugins/nvim-tree.lua
+  { '<c-i>',  'mzgg=G`z'},
 
 }

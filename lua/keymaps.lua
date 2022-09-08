@@ -31,7 +31,7 @@ keymap('n', '[g', '<cmd>lua vim.diagnostic.goto_prev()<cr>', {})
 keymap('n', ']g', '<cmd>lua vim.diagnostic.goto_next()<cr>', {}) 
 
 -- insert mode
-keymap('i', '<C-s>', '<ESC>:w<CR>', {})
+keymap('i', '<C-s>', '<ESC>:w<CR>i<Right>', {})
 keymap('i', '<C-v>', '<SPACE><ESC>P$i', {})
 keymap('i', '<S-Tab>', '<ESC><<$i<Right>', {})
 
