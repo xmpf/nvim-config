@@ -2,11 +2,11 @@ local nest = require('nest')
 
 nest.applyKeymaps {
   -- quick quit
-  { 'QQ', '<cmd>q!<cr>' },
-  { 'qq', '<cmd>wq!<cr>' },
+  { 'QQ', '<cmd>q!<cr>', mode = 'n'  },
+  { 'qq', '<cmd>wq!<cr>', mode = 'n' },
 
   -- Reset search highlight
-  { '<leader>h', '<cmd>nohl<cr>' },
+  { 'hh', '<cmd>nohl<cr>', mode = 'n' },
 
   -- move between windows
   { '<m-w>', '<ESC><C-w>k', mode = 'ni' }, -- up
@@ -28,6 +28,6 @@ nest.applyKeymaps {
   },
 
   -- reindent whole file
-  { '<c-i>',  'mzgg=G`z'},
+  { '<c-i>',  'mzgg=G`z', mode = 'n' },
 
 }
