@@ -13,6 +13,7 @@ require('nvim-treesitter.configs').setup {
     -- h
     "html",
     -- j
+    "java",
     "json",
     "javascript",
     -- l
@@ -23,6 +24,8 @@ require('nvim-treesitter.configs').setup {
     -- n
     "nix",
     -- p
+    "python",
+    "php",
     "proto",
     -- r
     "rust",
