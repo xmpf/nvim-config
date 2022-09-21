@@ -1,3 +1,6 @@
+-- plugins
+require('plugins')
+
 -- keybindings
 require('keymaps')
 require('keybindings')
@@ -6,10 +9,8 @@ require('keybindings')
 require('clipboard')
 require('configs')
 
--- plugins
-require('plugins')
-require('lsp')
 
--- programming languages
+-- programming
+require('lsp')
 require('golang')
 require('rust')
