@@ -4,21 +4,24 @@ local install_path = vim.fn.stdpath('data') .. '/site/pack/packer/start/packer.n
 vim.cmd [[packadd packer.nvim]]
 
 if not utils.path_exists(install_path) then
-    vim.fn.system({
-        'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim',
-        install_path
-    })
+  vim.fn.system({
+    'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim',
+    install_path
+  })
 
-    fresh_install = true
+  fresh_install = true
 end
 
 local packer = require('packer')
-
 packer.startup(function(use)
 
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+  use 'wbthomason/packer.nvim' 
 
+  -- mason
+  use 'williamboman/mason.nvim'    
+  use 'williamboman/mason-lspconfig.nvim'
+ 
   -- dashboard
   use 'glepnir/dashboard-nvim'
 
@@ -26,17 +29,18 @@ packer.startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
   use 'glepnir/lspsaga.nvim'
-  
+
   --[ debugging
   use 'nvim-lua/plenary.nvim'
   use 'mfussenegger/nvim-dap'
+  use 'puremourning/vimspector' 
 
   -- markdown
   use 'plasticboy/vim-markdown'
   use 'nathom/filetype.nvim'
 
   -- programming
- use "Djancyp/better-comments.nvim"
+  use "Djancyp/better-comments.nvim"
 
   --- rust
   use 'simrat39/rust-tools.nvim'
@@ -50,6 +54,8 @@ packer.startup(function(use)
   --- LSP autocomplete.
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-nvim-lua'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-vsnip'
@@ -76,8 +82,8 @@ packer.startup(function(use)
   use 'LionC/nest.nvim'
 
   use {
-   'nvim-lualine/lualine.nvim',
-   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
   -- Embeded floating terminal.
@@ -93,3 +99,4 @@ require('plugins.nvim-tree')
 require('plugins.dashboard')
 require('plugins.vim-markdown')
 require('plugins.nvim-cmp')
+require('plugins.mason')
