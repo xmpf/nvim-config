@@ -4,6 +4,19 @@ local rust_tools = require('rust-tools')
 local nest = require('nest')
 local lsp_installer_servers = require('nvim-lsp-installer.servers')
 
+local rt = require("rust-tools")
+
+rt.setup({
+  server = {
+    on_attach = function(_, bufnr)
+      -- Hover actions
+      vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
+      -- Code action groups
+      vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
+    end,
+  },
+}) 
+
 local ok, rust_analyzer = lsp_installer_servers.get_server('rust_analyzer')
 if ok then
   if not rust_analyzer:is_installed() then
@@ -50,6 +63,5 @@ end
 
 -- Apply remaps on Rust buffers
 vim.cmd('autocmd FileType rust call v:lua.apply_rust_remaps()')
-
 vim.cmd('command EnableRustfmt let g:rustfmt_autosave = 1')
 vim.cmd('command DisableRustfmt let g:rustfmt_autosave = 0')
