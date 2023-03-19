@@ -31,7 +31,6 @@ packer.startup(function(use)
   use 'glepnir/lspsaga.nvim'
 
   --[ debugging
-  use 'nvim-lua/plenary.nvim'
   use 'mfussenegger/nvim-dap'
   use 'puremourning/vimspector' 
 
@@ -61,6 +60,18 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
   use 'doums/suit.nvim'
+
+  use {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  } 
 
   -- Treesitter.
   use 'nvim-treesitter/nvim-treesitter'
@@ -100,3 +111,4 @@ require('plugins.dashboard')
 require('plugins.vim-markdown')
 require('plugins.nvim-cmp')
 require('plugins.mason')
+require('plugins.diagnostics')

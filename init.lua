@@ -12,7 +12,6 @@ require('configs')
 
 -- programming
 require('treesitter')
-require('lsp')
 require('golang')
 require('rust')
 

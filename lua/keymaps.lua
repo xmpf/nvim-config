@@ -18,7 +18,8 @@ keymap('n', '<C-f>', ':Telescope find_files<CR>', opts)
 keymap('n', '<C-g>', ':Telescope live_grep<CR>', opts) 
 keymap('n', '<C-b>', ':Telescope buffers<CR>', opts) 
 keymap('n', '<leader>k', ':Telescope keymaps<CR>', opts) 
-keymap('n', '<C-d>', ':Telescope diagnostics bufnr=0<CR>', opts)
+keymap('n', '<C-d>', ':Telescope diagnostics<CR>', opts)
+keymap('n', '<M-d>', ':lua vim.diagnostic.goto_next()<CR>', opts) 
 
 --- markdown
 --- see: ./plugins/vim-markdown.lua
