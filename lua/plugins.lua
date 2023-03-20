@@ -78,7 +78,7 @@ packer.startup(function(use)
 
   -- Treesitter.
   use 'nvim-treesitter/nvim-treesitter'
-  use 'kyazdani42/nvim-tree.lua'
+  use 'nvim-tree/nvim-tree'
 
   -- Color theme.
   use 'ayu-theme/ayu-vim'
@@ -97,7 +97,7 @@ packer.startup(function(use)
 
   use {
    'nvim-lualine/lualine.nvim',
-   requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+   requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
   -- Embeded floating terminal.
