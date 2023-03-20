@@ -42,7 +42,8 @@ packer.startup(function(use)
   use 'nathom/filetype.nvim'
 
   -- programming
-  use "Djancyp/better-comments.nvim"
+  use 'nvim-lua/plenary.nvim' 
+  use 'Djancyp/better-comments.nvim'
 
   -- linting
   use 'mfussenegger/nvim-lint' 
