@@ -21,7 +21,7 @@ packer.startup(function(use)
   -- mason
   use 'williamboman/mason.nvim'    
   use 'williamboman/mason-lspconfig.nvim'
- 
+
   -- dashboard
   use 'glepnir/dashboard-nvim'
 
@@ -34,12 +34,18 @@ packer.startup(function(use)
   use 'mfussenegger/nvim-dap'
   use 'puremourning/vimspector' 
 
+  -- file manager
+  use 'nvim-tree/nvim-tree.lua'
+
   -- markdown
   use 'plasticboy/vim-markdown'
   use 'nathom/filetype.nvim'
 
   -- programming
   use "Djancyp/better-comments.nvim"
+
+  -- linting
+  use 'mfussenegger/nvim-lint' 
 
   --- rust
   use 'simrat39/rust-tools.nvim'
@@ -71,11 +77,10 @@ packer.startup(function(use)
         -- refer to the configuration section below
       }
     end
-  } 
+  }
 
   -- Treesitter.
   use 'nvim-treesitter/nvim-treesitter'
-  use 'kyazdani42/nvim-tree.lua'
 
   -- Color theme.
   use 'ayu-theme/ayu-vim'
@@ -83,18 +88,18 @@ packer.startup(function(use)
   -- Telescope and its dependencies.
   use 'jremmen/vim-ripgrep'
   use 'nvim-lua/popup.nvim'
-  use 'nvim-lua/plenary.nvim'
   use 'nvim-lua/telescope.nvim'
 
   -- Lua snippets.
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
 
+  -- keybindings
   use 'LionC/nest.nvim'
 
   use {
     'nvim-lualine/lualine.nvim',
-    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
   }
 
   -- Embeded floating terminal.
@@ -112,3 +117,4 @@ require('plugins.vim-markdown')
 require('plugins.nvim-cmp')
 require('plugins.mason')
 require('plugins.diagnostics')
+-- require('plugins.coq')
