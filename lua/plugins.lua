@@ -38,6 +38,10 @@ packer.startup(function(use)
   -- programming
  use "Djancyp/better-comments.nvim"
 
+
+  -- linting
+  use 'mfussenegger/nvim-lint' 
+
   --- rust
   use 'simrat39/rust-tools.nvim'
   use 'cespare/vim-toml'
@@ -88,6 +92,7 @@ packer.startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
 
+  -- keybindings
   use 'LionC/nest.nvim'
 
   use {
@@ -108,3 +113,4 @@ require('plugins.nvim-tree')
 require('plugins.dashboard')
 require('plugins.vim-markdown')
 require('plugins.nvim-cmp')
+require('plugins.coq')
