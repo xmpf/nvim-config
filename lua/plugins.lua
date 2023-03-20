@@ -44,6 +44,7 @@ packer.startup(function(use)
   -- programming
   use 'nvim-lua/plenary.nvim' 
   use 'Djancyp/better-comments.nvim'
+  use 'tpope/vim-commentary'
 
   -- linting
   use 'mfussenegger/nvim-lint' 
