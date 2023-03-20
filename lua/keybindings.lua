@@ -28,6 +28,6 @@ nest.applyKeymaps {
   },
 
   -- reindent whole file
-  { '<c-i>',  'mzgg=G`z', mode = 'n' },
+  { 'gg',  'mzgg=G`z', mode = 'n' },
 
 }

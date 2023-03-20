@@ -5,7 +5,7 @@ vim.api.nvim_create_user_command('FTermToggle', fterm.toggle, { bang = true })
 
 -- variables
 local toggleTerm = fterm.toggle
-local opts = {}
+local opts = { noremap=true, silent=true }
 
 -- keybindings
 

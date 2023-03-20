@@ -26,6 +26,10 @@ packer.startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
   use 'glepnir/lspsaga.nvim'
+  
+  --[ debugging
+  use 'nvim-lua/plenary.nvim'
+  use 'mfussenegger/nvim-dap'
 
   -- markdown
   use 'plasticboy/vim-markdown'
@@ -37,6 +41,7 @@ packer.startup(function(use)
   --- rust
   use 'simrat39/rust-tools.nvim'
   use 'cespare/vim-toml'
+  use 'lvimuser/lsp-inlayhints.nvim'
 
   --- golang
   use 'ray-x/guihua.lua'
