@@ -5,7 +5,7 @@ vim.g.loaded_netrwPlugin = 1
 require('plugins')
 
 -- keybindings
-require('keybindings')
+require('nest-keys')
 require('keymaps')
 
 -- configuration
