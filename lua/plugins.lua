@@ -50,8 +50,7 @@ packer.startup(function(use)
 
   -- programming
   use 'nvim-lua/plenary.nvim' 
-  use 'Djancyp/better-comments.nvim'
-  use 'tpope/vim-commentary'
+  use 'numToStr/Comment.nvim'
 
   -- linting
   use 'mfussenegger/nvim-lint' 
@@ -146,3 +145,4 @@ require('plugins.mason')
 require('plugins.bufferline-config')
 require('plugins.diagnostics')
 require('plugins.trouble-config')
+require('plugins.comment')
