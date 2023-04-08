@@ -55,7 +55,7 @@ vim.bo.filetype = 'on'
 
 --[ window local
 vim.wo.number = true
-vim.wo.wrap = false
+vim.wo.wrap = true
 vim.wo.colorcolumn = '80'
 
 -- Vimspector options
