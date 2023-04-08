@@ -49,13 +49,13 @@ nvim_tree.setup {
         default = "",
         symlink = "",
         folder = {
-          default = "",
-          empty = "",
+          default = "📁",
+          empty = "🖿 ",
           empty_open = "",
-          open = "",
-          symlink = "",
+          open = "🗁 ",
+          symlink = "🔗",
           symlink_open = "",
-          arrow_open = "",
+          arrow_open = "⤵",
           arrow_closed = "",
         },
         git = {
