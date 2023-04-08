@@ -25,6 +25,13 @@ packer.startup(function(use)
   -- dashboard
   use 'glepnir/dashboard-nvim'
 
+  -- tabline
+  use {
+    'akinsho/bufferline.nvim',
+    tag = "v3.*",
+    requires = 'nvim-tree/nvim-web-devicons'
+  } 
+
   -- LSP.
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
@@ -72,13 +79,6 @@ packer.startup(function(use)
   use {
     "folke/trouble.nvim",
     requires = "nvim-tree/nvim-web-devicons",
-    config = function()
-      require("trouble").setup {
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      }
-    end
   }
 
   use {
@@ -143,5 +143,6 @@ require('plugins.dashboard')
 require('plugins.vim-markdown')
 require('plugins.nvim-cmp')
 require('plugins.mason')
+require('plugins.bufferline-config')
 require('plugins.diagnostics')
--- require('plugins.coq')
+require('plugins.trouble-config')
