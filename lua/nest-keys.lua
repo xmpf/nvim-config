@@ -1,6 +1,6 @@
 local nest = require('nest')
 
-nest.applyKeymaps {
+nest.applyKeymaps({
   -- quick quit
   { 'QQ', '<cmd>q!<cr>', mode = 'n' },
   { 'qq', '<cmd>wq!<cr>', mode = 'n' },
@@ -22,8 +22,15 @@ nest.applyKeymaps {
   -- reindent whole file
   { 'gg',  'mzgg=G`z', mode = 'n' },
 
-  { '//',  '<cmd>vsplit<cr>' },
-  { '--',  '<cmd>split<cr>' },
+  {
+    '<leader>', {
+      { '-',  '<cmd>split<cr>' },
+      { '\\', '<cmd>vsplit<cr>' },
+      { 'q',  '<cmd>quit<cr>' },
+      { 'o',  '<cmd>only<cr>' },
+    }
+  }, 
+
   -- TroubleToggle
   { 'tt', '<cmd>TroubleToggle<cr>' },
-}
+})

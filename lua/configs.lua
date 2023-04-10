@@ -5,6 +5,7 @@ local spaces = 2
 vim.opt.completeopt = { "menuone", "noinsert", "noselect" }
 vim.opt.showmode = false
 vim.opt.hidden = true
+vim.opt.cindent = true
 
 --[ backups
 vim.opt.backup = false
@@ -28,6 +29,7 @@ vim.opt.conceallevel = 3
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.showmatch = true
+vim.opt.number = true
 
 --[ indentation
 vim.opt.shiftwidth = spaces
@@ -42,11 +44,6 @@ vim.opt.smartcase = true
 vim.opt.incsearch = true
 vim.opt.hlsearch = true
 
---[ vim commands
-vim.cmd('syntax on')
-vim.cmd('filetype plugin indent on')
-vim.cmd('colorscheme behelit')
-   
 --[ buffer local
 vim.bo.autoindent = true
 vim.bo.smartindent = true
@@ -56,11 +53,26 @@ vim.bo.filetype = 'on'
 --[ window local
 vim.wo.number = true
 vim.wo.wrap = true
-vim.wo.colorcolumn = '80'
+vim.wo.colorcolumn = '100'
 
 -- Vimspector options
 vim.cmd([[
-  let g:vimspector_sidebar_width = 85
+  let g:vimspector_sidebar_width = 100
   let g:vimspector_bottombar_height = 15
   let g:vimspector_terminal_maxwidth = 70
 ]]) 
+
+-- Copy path to clipboard
+function _G.copy_path()
+    local path = vim.fn.expand('%:p')
+    vim.fn.setreg('+', path)
+    vim.fn.setreg('*', path)
+end 
+
+--[ vim commands
+vim.cmd('syntax on')
+vim.cmd('filetype plugin on')
+vim.cmd('filetype indent on')
+vim.cmd('colorscheme behelit')
+vim.cmd('command ShowPath echo expand(\'%:p\')')
+vim.cmd('command CopyPath call v:lua.copy_path()') 
