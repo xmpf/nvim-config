@@ -75,6 +75,18 @@ packer.startup(function(use)
   use 'hrsh7th/vim-vsnip'
   use 'doums/suit.nvim'
 
+  use({
+    "folke/noice.nvim",
+    requires = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+    }
+  }) 
+
   use {
     "folke/trouble.nvim",
     requires = "nvim-tree/nvim-web-devicons",
@@ -146,3 +158,5 @@ require('plugins.bufferline-config')
 require('plugins.diagnostics')
 require('plugins.trouble-config')
 require('plugins.comment')
+require('plugins.noice-config')
+require('plugins.lsp-config')

@@ -10,6 +10,6 @@ require("trouble").setup({
     warning = "",
     hint = "",
     information = "",
-    other = "﫠"
+    other = ""
   }, 
 })
