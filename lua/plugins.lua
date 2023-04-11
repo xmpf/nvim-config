@@ -56,6 +56,7 @@ packer.startup(function(use)
   use 'mfussenegger/nvim-lint' 
 
   --- rust
+  use 'rust-lang/rust.vim' 
   use 'simrat39/rust-tools.nvim'
   use 'cespare/vim-toml'
   use 'lvimuser/lsp-inlayhints.nvim'
@@ -119,7 +120,8 @@ packer.startup(function(use)
 
   -- Treesitter.
   use 'nvim-treesitter/nvim-treesitter'
-
+  use 'nvim-treesitter/playground'
+   
   -- Color theme.
   use 'ayu-theme/ayu-vim'
 
