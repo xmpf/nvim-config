@@ -49,7 +49,6 @@ vim.opt.hlsearch = true
 vim.bo.autoindent = true
 vim.bo.smartindent = true
 vim.bo.swapfile = false
-vim.bo.filetype = 'on'
 
 --[ window local
 vim.wo.number = true
@@ -72,8 +71,9 @@ end
 
 --[ vim commands
 vim.cmd('syntax on')
-vim.cmd('filetype plugin on')
-vim.cmd('filetype indent on')
 vim.cmd('colorscheme behelit')
 vim.cmd('command ShowPath echo expand(\'%:p\')')
 vim.cmd('command CopyPath call v:lua.copy_path()') 
+
+-- vim.cmd('filetype plugin on')
+-- vim.cmd('filetype indent on')
