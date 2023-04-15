@@ -18,6 +18,9 @@ packer.startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim' 
 
+  -- optimization
+  use 'lewis6991/impatient.nvim' 
+
   -- mason
   use 'williamboman/mason.nvim'    
   use 'williamboman/mason-lspconfig.nvim'
@@ -46,7 +49,6 @@ packer.startup(function(use)
 
   -- markdown
   use 'plasticboy/vim-markdown'
-  use 'nathom/filetype.nvim'
 
   -- programming
   use 'nvim-lua/plenary.nvim' 
@@ -121,7 +123,7 @@ packer.startup(function(use)
   -- Treesitter.
   use 'nvim-treesitter/nvim-treesitter'
   use 'nvim-treesitter/playground'
-   
+
   -- Color theme.
   use 'ayu-theme/ayu-vim'
 

@@ -30,6 +30,7 @@ vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.showmatch = true
 vim.opt.number = true
+vim.opt.textwidth = 80
 
 --[ indentation
 vim.opt.shiftwidth = spaces
