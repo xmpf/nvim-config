@@ -25,7 +25,7 @@ keymap('n', '<S-d>', ':lua vim.diagnostic.goto_next()<CR>', opts)
 --- see: ./plugins/vim-markdown.lua
 
 --- copy/paste
-keymap('n', '<C-v>', 'P$i<Right>', opts)
+keymap('n', '<C-v>', '<Esc>:set paste<CR>P$i<Right>', opts)
 
 --- programming
 keymap('n', '<C-k>', '<cmd>lua require("lsp_signature").signature()<CR>', opts)
