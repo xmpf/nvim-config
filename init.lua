@@ -1,6 +1,8 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1 
 
+vim.g.python3_host_prog = '/usr/bin/python3'
+
 -- plugins
 require('plugins')
 

@@ -3,10 +3,19 @@
 local nvim_tree = require('nvim-tree')
 local nest = require('nest')
 
+local function on_attach(bufnr)
+  local api = require('nvim-tree.api')
+
+  local function opts(desc)
+    return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+  end
+end
+
 nvim_tree.setup {
   auto_reload_on_write = true,
   sort_by = "case_insensitive",
   sync_root_with_cwd = true, 
+  on_attach = "on_attach",
   view = {
     adaptive_size = false,
     side = "left",

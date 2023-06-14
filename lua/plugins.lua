@@ -46,7 +46,6 @@ packer.startup(function(use)
 
   -- markdown
   use 'plasticboy/vim-markdown'
-  use 'nathom/filetype.nvim'
 
   -- programming
   use 'nvim-lua/plenary.nvim' 
